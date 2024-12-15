@@ -21,7 +21,7 @@ def print_grid(grid, antinodes):
         print("".join(row))
 
 def part_one():
-    with open("day08.txt", "r") as f:
+    with open("input/day08.txt", "r") as f:
         grid = [list(line.rstrip()) for line in f.readlines()]
     
     nrow = len(grid)
@@ -45,7 +45,7 @@ def part_one():
 
 
 def part_two():
-    with open("day08.txt", "r") as f:
+    with open("input/day08.txt", "r") as f:
         grid = [list(line.rstrip()) for line in f.readlines()]
     
     nrow = len(grid)

@@ -50,7 +50,7 @@ def get_valid_equations(equations, allowed_ops):
 
 
 def part_one():
-    equations = parse_input("day07.txt")
+    equations = parse_input("input/day07.txt")
     valid_equations = get_valid_equations(equations, ["+", "*"])
     target_sum = sum([x[0] for x in valid_equations])
     
@@ -58,7 +58,7 @@ def part_one():
     print(f"Sum of targets = {target_sum}")
 
 def part_two():
-    equations = parse_input("day07.txt")
+    equations = parse_input("input/day07.txt")
     valid_equations = get_valid_equations(equations, ["+", "*", "||"])
     target_sum = sum([x[0] for x in valid_equations])
     

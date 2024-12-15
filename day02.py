@@ -36,7 +36,7 @@ def subreport_is_safe(L, idx, low=1, high=3):
 
 def part_one():
     count = 0
-    with open("day02.txt", "r") as f:
+    with open("input/day02.txt", "r") as f:
         while line := f.readline():
             report = [int(x) for x in line.rstrip().split()]
             if report_is_safe(report, 1, 3):
@@ -49,7 +49,7 @@ def part_one():
 
 def part_two():
     count = 0
-    with open("day02.txt", "r") as f:
+    with open("input/day02.txt", "r") as f:
         while line := f.readline():
             report = [int(x) for x in line.rstrip().split()]
             if report_is_almost_safe(report, 1, 3):

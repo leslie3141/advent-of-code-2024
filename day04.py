@@ -53,14 +53,14 @@ def count_xmas(word, grid):
     return tot_xmas
 
 def part_one():
-    with open("day04.txt", "r") as f:
+    with open("input/day04.txt", "r") as f:
         grid = [list(line.rstrip()) for line in f.readlines()]
     
     num_matches = count_matches("XMAS", grid)
     print(f"matches = {num_matches}")
 
 def part_two():
-    with open("day04.txt", "r") as f:
+    with open("input/day04.txt", "r") as f:
         grid = [list(line.rstrip()) for line in f.readlines()]
     
     num_xmas = count_xmas("MAS", grid)

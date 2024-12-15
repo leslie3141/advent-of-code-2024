@@ -34,7 +34,7 @@ def checksum(blocks):
     return sum([i * x for i, x in enumerate(blocks) if x != "."])
 
 def part_one():
-    with open("day09.txt", "r") as f:
+    with open("input/day09.txt", "r") as f:
         input = f.read().rstrip()
 
     # input = "2333133121414131402"
@@ -61,7 +61,7 @@ def part_one():
     print(checksum(blocks))
 
 def part_two():
-    with open("day09.txt", "r") as f:
+    with open("input/day09.txt", "r") as f:
         input = f.read().rstrip()
 
     # input = "2333133121414131402"

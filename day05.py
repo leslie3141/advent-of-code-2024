@@ -40,7 +40,7 @@ def compare_pages(p1, p2, rules):
 
 
 def part_one():
-    rules, books = parse_input("day05.txt")
+    rules, books = parse_input("input/day05.txt")
 
     valid_books = [b for b in books if book_is_valid(b, rules)]
     
@@ -50,7 +50,7 @@ def part_one():
 
 
 def part_two():
-    rules, books = parse_input("day05.txt")
+    rules, books = parse_input("input/day05.txt")
 
     invalid_books = []
     for book in books:

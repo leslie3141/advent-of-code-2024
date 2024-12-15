@@ -4,7 +4,7 @@ def part_one():
     list1 = []
     list2 = []
 
-    with open("day01.txt", "r") as f:
+    with open("input/day01.txt", "r") as f:
         while line := f.readline():
             a, b = [int(x) for x in line.rstrip().split()]
             list1.append(a)
@@ -20,7 +20,7 @@ def part_two():
     dict1 = defaultdict(int)
     dict2 = defaultdict(int)
 
-    with open("day01.txt", "r") as f:
+    with open("input/day01.txt", "r") as f:
         while line := f.readline():
             a, b = [int(x) for x in line.rstrip().split()]
             dict1[a] += 1

@@ -42,12 +42,12 @@ def get_trailhead_score(start, grid, rating):
 
 
 def part_one():
-    starts, grid = parse_input("day10.txt")
+    starts, grid = parse_input("input/day10.txt")
     scores = [get_trailhead_score(s, grid, False) for s in starts]
     print(f"Total trailhead score = {sum(scores)}")
 
 def part_two():
-    starts, grid = parse_input("day10.txt")
+    starts, grid = parse_input("input/day10.txt")
     ratings = [get_trailhead_score(s, grid, True) for s in starts]
     print(f"Total trailhead rating = {sum(ratings)}")
 

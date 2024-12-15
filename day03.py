@@ -1,7 +1,7 @@
 import re
 
 def part_one():
-    with open("day03.txt", "r") as f:
+    with open("input/day03.txt", "r") as f:
         data = f.read()
     
     matches = re.findall(r"mul\(\d+,\d+\)", data)
@@ -14,7 +14,7 @@ def part_one():
     print(f"total = {tot}")
 
 def part_two():
-    with open("day03.txt", "r") as f:
+    with open("input/day03.txt", "r") as f:
         data = f.read()
     
     matches = re.findall(r"(mul\(\d+,\d+\)|do\(\)|don't\(\))", data)
