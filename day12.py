@@ -1,9 +1,10 @@
-from collections import defaultdict
-
 def expand_plot(start, grid):
     nrow = len(grid)
     ncol = len(grid[0])
 
+    # Use BFS to find the full size of the plot
+    # Area = total number of cells
+    # Perimeter = 4 * total number of cells - 2 * unvisited adjacents added to queue
     area = 0
     perimeter = 0
     queue = [start]
@@ -81,8 +82,6 @@ def part_one():
 
 
 def part_two():
-    # Count number of corners - equals coords with odd num of adjacents
-    # OR with two diagonally-opposed adjacents
     with open("input/day12.txt", "r") as f:
         grid = [list(line.rstrip()) for line in f.readlines()]
     
@@ -99,7 +98,8 @@ def part_two():
             letter = grid[r][c]
             area, _, nodes = expand_plot(node, grid)
 
-            # From list of nodes, count corners as described above
+            # From list of nodes that make up the plot, count corners
+            # For a 2D shape, corners = sides
             corners = get_corners(nodes)
             plots.append((letter, area, len(corners)))
             visited.update(nodes)
